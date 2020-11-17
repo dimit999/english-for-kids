@@ -1,0 +1,21 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Arial';
+  font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 160%;
+  font-weight: normal;
+  color:  #4C4C4C;
+}
+
+.wrapper {
+  max-width: $content-width;
+  margin: 0 auto;
+}
