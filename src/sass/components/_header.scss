@@ -8,22 +8,25 @@
   font-weight: bold;
   font-size: 49px;
   line-height: 60px;
-  color: #3D3D3D;
+  color: #FFBC29;
+  text-shadow: .07em 2px rgb(58, 55, 24);
   @include media-laptop {
-    padding: 50px 0 0 0;
+    padding: 60px 0 0 0;
+    margin-bottom: -18px;
   }
 
   @include media-tablet {
-    padding: 50px 0 0 60px;
+    padding: 60px 0 0 60px;
+    margin-bottom: -18px;
   }
 
   @include media-mobileMiddle {
-    padding: 50px 0 0 45px;
+    padding: 60px 0 0 45px;
     margin-bottom: -18px;
   }
 
   @include media-preMobileSmall {
-    padding: 50px 0 0 45px;
+    padding: 60px 0 0 45px;
     margin-bottom: -18px;
   }
 }

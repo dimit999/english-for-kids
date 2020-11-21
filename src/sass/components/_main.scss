@@ -1,11 +1,7 @@
-.main_page {
-  background-image: url(../assets/images/jpg/bg.jpg) no-repeat center;
+body {
+  background: radial-gradient(100% 215.42% at 0%, #246579 0%, #b4babe 100%), #5f5c5e no-repeat;
   background-size: cover;
 }
-
-// .default-card {
-//   padding-right: 6px;
-// }
 
 .switch {
   @include media-laptop {
