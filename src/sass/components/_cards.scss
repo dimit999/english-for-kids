@@ -1,0 +1,28 @@
+.card {
+  margin-top: 15%;
+}
+
+.cards-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @include media-tablet {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  @include media-mobileMiddle {
+    padding-left: 44px;
+    padding-right: 30px;
+  }
+
+  @include media-preMobileSmall {
+    padding-left: 30px;
+    padding-left: 44px;
+  }
+}
+
+.card-text {
+  text-align: center;
+}

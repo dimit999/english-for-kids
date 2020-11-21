@@ -2,3 +2,48 @@
   background-image: url(../assets/images/jpg/bg.jpg) no-repeat center;
   background-size: cover;
 }
+
+// .default-card {
+//   padding-right: 6px;
+// }
+
+.switch {
+  @include media-laptop {
+    margin-top: 50px;
+  }
+
+  @include media-tablet {
+    margin-top: 50px;
+    margin-right: 59px;
+  }
+
+  @include media-mobileMiddle {
+    margin-top: 50px;
+    margin-right: 40px;
+  }
+
+  @include media-preMobileSmall {
+    margin-top: 50px;
+    margin-right: 40px;
+  }
+}
+
+.burger-menu_button {
+  @include media-laptop {
+    margin-top: 35px;
+    margin-left: 337px;
+  }
+
+  @include media-tablet {
+    margin-top: 35px;
+    margin-left: 33px;
+  }
+
+  @include media-mobileMiddle {
+    margin-top: 38px;
+  }
+
+  @include media-preMobileSmall {
+    margin-top: 38px;
+  }
+}

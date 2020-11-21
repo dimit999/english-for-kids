@@ -12,7 +12,7 @@ module.exports = {
   // Итак,  чтобы вебпак начал свою работу, нужно указать главный (основной) файл, который будет включать в себя все другие необходимые файлы (модули).
   entry: {
     polyfill: 'babel-polyfill',
-    app: ['./js/app.js', './js/burger.js', './js/cards.js', './sass/style.scss'],
+    app: ['./js/app.js', './js/burger.js', './js/cards.js', './js/switch.js', './sass/style.scss'],
   },
   // output: {
   //   path: path.join(__dirname, '/dist'),
@@ -89,6 +89,13 @@ module.exports = {
             },
           },
         ],
+      },
+      {
+        test: /\.mp3$/,
+        loader: 'file-loader',
+        options: {
+          name: '[path][name].[ext]',
+        },
       },
       {
         test: /\.html$/, // Для отрисовки картинок

@@ -1,0 +1,29 @@
+.header__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 49px;
+  line-height: 60px;
+  color: #3D3D3D;
+  @include media-laptop {
+    padding: 50px 0 0 0;
+  }
+
+  @include media-tablet {
+    padding: 50px 0 0 60px;
+  }
+
+  @include media-mobileMiddle {
+    padding: 50px 0 0 45px;
+    margin-bottom: -18px;
+  }
+
+  @include media-preMobileSmall {
+    padding: 50px 0 0 45px;
+    margin-bottom: -18px;
+  }
+}
