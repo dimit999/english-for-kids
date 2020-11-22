@@ -1,5 +1,6 @@
-const cards = [
-	['Action (set A)', 'Action (set B)', 'Animal (set A)', 'Animal (set B)', 'Clothes', 'Emotions', 'Fairytales', 'Food'],
+const groupCards = ['Action (set A)', 'Action (set B)', 'Animal (set A)', 'Animal (set B)', 'Clothes', 'Emotions', 'Fairytales', 'Food'];
+
+const cardsData = [
 	[
 		{
 			word: 'cry',
@@ -437,4 +438,4 @@ const defaultCards = [
 	},
 ];
 
-export { defaultCards, cards };
+export { defaultCards, groupCards, cardsData };
