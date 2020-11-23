@@ -76,12 +76,25 @@ function sayWord({ target }) {
 		const nameOfCardGroup = target.parentNode.classList.value.split(' ').slice(-1);
 		const indexCard = groupCardsData.indexOf(nameOfCardGroup[0].replace(/-/g, ' '));
 		cardsDataData[indexCard].forEach((card) => {
-			if (card.word == target.alt.replace(' image', '') || card.word == target.innerText) {
+			if (card.word == target.alt.replace(' image', '')) {
 				const audio = new Audio();
 				audio.src = card.audioSrc;
 				audio.play();
 			}
 		});
+	// eslint-disable-next-line no-extra-boolean-cast
+	} else if (!!target.offsetParent) {
+		if (target.offsetParent.classList[1] == 'card-audio') {
+			const nameOfCardGroupVal = target.offsetParent.className.split(' ').slice(-1)[0].replace(/-/g, ' ');
+			const indexCard = groupCardsData.indexOf(nameOfCardGroupVal.replace(/-/g, ' '));
+			cardsDataData[indexCard].forEach((card) => {
+				if (card.word == target.innerText.toLocaleLowerCase()) {
+					const audio = new Audio();
+					audio.src = card.audioSrc;
+					audio.play();
+				}
+			});
+		}
 	}
 }
 
