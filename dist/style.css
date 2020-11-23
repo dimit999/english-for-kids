@@ -654,6 +654,9 @@ body {
   text-align: center;
   margin-left: 20px; }
 
+.card-text-back {
+  margin-left: 0px; }
+
 .condition {
   width: 17px;
   height: 17px;
@@ -671,6 +674,36 @@ body {
   cursor: pointer;
   perspective: 1000px;
   box-shadow: 0px 16px 16px rgba(0, 0, 0, 0.25); }
+
+.card-condition-wrapper {
+  background-color: white; }
+
+.flip-card {
+  background-color: transparent;
+  height: 249px;
+  perspective: 1000px; }
+
+.flip-card-inner {
+  position: relative;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
+
+.flip-card:hover.front-rotate .flip-card-inner {
+  transform: rotateY(180deg); }
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+.flip-card-back {
+  transform: rotateY(180deg); }
+
+.card-body {
+  background-color: white; }
 
 .arrow {
   right: 0;
